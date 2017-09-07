@@ -46,7 +46,7 @@ int main(void)
 	kgetline(arr);
 	printf("result is %s\n", arr);
 	
-	while ((ch =getchar()) != '\n' && ch != EOF);
+	while ((ch = getchar()) != '\n' && ch != EOF);
 
 	printf("please input the string: ");
 	kgetline(abc);

@@ -6,4 +6,3 @@ void hello(const char* name);
 #endif //HELLO_H
 
 
-

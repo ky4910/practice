@@ -32,8 +32,11 @@ int main(void)
 	};
 
 	commands[0].function();
+	printf("command is %s\n", commands[0].name);
+	printf("command is %s\n", commands[1].name);
 
 	return 0;
 }
+
 
 
