@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #define MAX_SIZE 2048
+#define PATH(n) "/home/kimber/Desktop/Sample/practice/C/channel"#n"tmp/value"
 
 int read_content(const char *path);
 int write_content(const char *path, const char *value);
@@ -9,14 +10,13 @@ int write_content(const char *path, const char *value);
 int main(int argc, char* argv[])
 {
 	int value = 0;
-	char *route = "//home//kimber//Desktop//Sample//practice//C//channel";
 	char content[MAX_SIZE] = {'\0'};
 	
-	printf("file content is %d\n", read_content(route));
+	printf("file content is %d\n", read_content(PATH(2)));
 
 	printf("plz input content: ");
 	scanf("%s", content);
-	write_content(route, content);
+	write_content(PATH(2), content);
 
 	return 0;
 }
