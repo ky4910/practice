@@ -8,7 +8,7 @@ int main()
     int i = 0;
     int bit_1 = 0, bit_16 = 0;
     int num[16] = {1,0,0,0,  0,1,0,0,  1,1,1,0,  0,0,0,0};
-	int number = 10;
+	int number = 0;
 	char str[10] = {'\0'};
 
     for (i = 15; i >= 0; i--)
