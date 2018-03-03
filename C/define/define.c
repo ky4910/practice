@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+#ifdef DEBUG
+#define MAX 255
+#else
+#define MAX 7
+#endif
+
 #define COMMAND(NAME) {#NAME, NAME##_command}
 #define paster(n) printf("token"#n" = %d\n", token##n)
 
@@ -34,6 +40,8 @@ int main(void)
 	commands[0].function();
 	printf("command is %s\n", commands[0].name);
 	printf("command is %s\n", commands[1].name);
+
+	printf("\nMAX value is %d\n", MAX);
 
 	return 0;
 }
